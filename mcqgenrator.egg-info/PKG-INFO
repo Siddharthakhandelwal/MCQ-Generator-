@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: mcqgenrator
-Version: 0.0.1
-Author: keshav agrawal
+Version: 1.0.5
+Author: Keshav Agrawal
 Author-email: tekionix.askkeshav@gmail.com
 Requires-Dist: google-generativeai
 Requires-Dist: langchain

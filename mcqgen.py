@@ -14,7 +14,11 @@ with open(r"Response.json", 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 # st.title("Real-Time MCQ Creator with LangChain & Google Gemini Pro")
-st.title("MCQs Creator Application with LangChain 🦜⛓️")
+# st.title("MCQs Creator Application with LangChain 🦜⛓️")
+st.title("Real-Time MCQs Creator Application with LangChain 🦜⛓️")
+
+# st.markdown("<h2 style='text-align: left; color: white;'>Real-Time MCQs Creator Application with LangChain 🦜⛓️</h2>", unsafe_allow_html=True)
+
 
 with st.form("user_inputs"):
     uploaded_file=st.file_uploader("Upload a PDF or txt file")
@@ -59,3 +63,6 @@ with st.form("user_inputs"):
                             st.error("Error in table data")
                     else:
                         st.write(response)
+
+
+st.markdown("<h3 style='text-align: center; color: white;'>Developed with ❤️ for GenAI by <a style='text-decoration: none' href='https://www.linkedin.com/in/keshavagrawal595/'>Keshav Agrawal</a></h1>", unsafe_allow_html=True)
