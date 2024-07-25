@@ -10,12 +10,17 @@ import streamlit as st
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 
 
+LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_PROJECT"]=os.getenv("LANGCHAIN_PROJECT")
+os.environ["LANGCHAIN_TRACING_V2"]="true"
+
 with open(r"Response.json", 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 # st.title("Real-Time MCQ Creator with LangChain & Google Gemini Pro")
 # st.title("MCQs Creator Application with LangChain 🦜⛓️")
-st.title("Real-Time MCQs Creator Application with LangChain 🦜⛓️")
+st.title("Real-Time MCQs Creator Application 🦜⛓️")
 
 # st.markdown("<h2 style='text-align: left; color: white;'>Real-Time MCQs Creator Application with LangChain 🦜⛓️</h2>", unsafe_allow_html=True)
 
